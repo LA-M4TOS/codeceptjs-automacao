@@ -7,6 +7,8 @@ export const config = {
       browser: 'chromium',
       url: 'http://localhost',
       show: true
+
+,
     }
   },
   include: {
