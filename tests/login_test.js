@@ -2,26 +2,49 @@ Feature('login');
 
 Scenario('Login com Sucesso', ({ I }) => {
 
-    I.amOnPage('https://automationpratice.com.br/');
-    I.click('login');
-    I.click('#user');  
+    I.amOnPage('https://automationpratice.com.br/')
+    I.click('login')
+    I.waitForText('Login', 20)
     I.fillField('#user', 'luisaugusto.matos@gmail.com');
-})
-//Scenario('Tentando Logar digitando apenas o e-mail', ({ I }) => {
+    I.fillField('#password', 'senha123')
+    I.click('#btnLogin')
+    I.waitForText('Login realizado', 5)
+    I.click('OK');
 
-//    I.amOnPage('https://automationpratice.com.br/');
+}).tag('@sucesso');
 
+Scenario('Tentando Logar digitando apenas o e-mail', ({ I }) => {
 
-//})
-//Scenario('Tentando Logar sem digitar e-mail e senha', ({ I }) => {
+    I.amOnPage('https://automationpratice.com.br/');
+    I.click('login')
+    I.waitForText('Login', 20)
+    I.fillField('#user', 'luisaugusto.matos@gmail.com');
+    I.fillField('#password', '')
+    I.click('#btnLogin')
+    I.waitForText('Senha inválida', 5);
 
-//    I.amOnPage('https://automationpratice.com.br/');
+}).tag('@apenasemail');
 
+Scenario('Tentando Logar sem digitar e-mail e senha', ({ I }) => {
 
-//})
-//Scenario('Tentando Logar digitando apenas a senha', ({ I }) => {
+    I.amOnPage('https://automationpratice.com.br/');
+    I.click('login')
+    I.waitForText('Login', 20)
+    I.fillField('#user', '');
+    I.fillField('#password', '')
+    I.click('#btnLogin')
+    I.waitForText('E-mail inválido.', 10);
 
-//    I.amOnPage('https://automationpratice.com.br/');
+}).tag('@sememailesenha');
 
+Scenario('Tentando Logar digitando apenas a senha', ({ I }) => {
 
-//})
+   I.amOnPage('https://automationpratice.com.br/')
+    I.click('login')
+    I.waitForText('Login', 20)
+    // I.fillField('#user', '');
+    I.fillField('#password', '123456')
+    I.click('#btnLogin')
+    I.waitForText('E-mail inválido.', 10);
+
+}).tag('@apenassenha'); 
