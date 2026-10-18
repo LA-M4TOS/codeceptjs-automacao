@@ -4,5 +4,11 @@ Este repositório contém um conjunto de testes automatizados desenvolvidos em *
 O objetivo deste projeto é validar o fluxo de **login** no site de demonstração:  
 https://automationpractice.com.br/
 
-# Para maiores informações: https://www.linkedin.com/in/luisaugustomatos/
+## 🧰 Tecnologias Utilizadas
 
+- **CodeceptJS v4.2.0**
+- **Playwright (Chromium)**
+- **Node.js**
+- **Visual Studio Code**
+- **Git & GitHub**
+# Para maiores informações: https://www.linkedin.com/in/luisaugustomatos/
