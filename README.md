@@ -2,7 +2,7 @@
 Este repositório contém um conjunto de testes automatizados desenvolvidos em **CodeceptJS**, utilizando o helper **Playwright** para simular interações reais com o navegador.
 
 O objetivo deste projeto é validar o fluxo de **login** no site de demonstração:  
-https://automationpractice.com.br/
+https://automationpractice.com.br/ e https://practicetestautomation.com/
 
 ## 🧰 Tecnologias Utilizadas
 
