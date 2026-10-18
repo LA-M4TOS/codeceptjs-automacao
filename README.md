@@ -11,4 +11,14 @@ https://automationpractice.com.br/
 - **Node.js**
 - **Visual Studio Code**
 - **Git & GitHub**
+
+## 🏷️ Badges
+
+![Node.js](https://img.shields.io/badge/Node.js-18+-green)
+![CodeceptJS](https://img.shields.io/badge/CodeceptJS-v4.2.0-blue)
+![Playwright](https://img.shields.io/badge/Playwright-Chromium-purple)
+![Status](https://img.shields.io/badge/Status-Ativo-success)
+![License](https://img.shields.io/badge/License-MIT-lightgrey)
 # Para maiores informações: https://www.linkedin.com/in/luisaugustomatos/
+# 🚀 Projeto de Automação de Testes com CodeceptJS
+
